@@ -1,0 +1,104 @@
+.descuentos-container {
+  display: flex;
+  justify-content: center;
+}
+
+.descuento {
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.descuento:hover {
+  transform: translateY(-5px);
+}
+
+.descuento-img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+.descuento-titulo {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.descuento-descripcion {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.descuentos-section {
+  background-color: #F9F9F9;
+  padding: 20px;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.descuentos-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  color: #000;
+}
+
+.descuentos-section h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #999cb4;
+}
+
+.productos-section {
+  background-color: #999cb4;
+  padding: 40px;
+  margin: 0 10px;
+}
+
+.tarjetas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tarjeta {
+  width: calc(33.33% - 8px);
+  margin: 50px;
+  border: 1px solid #ECECEC;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  background-color: #ffffff;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta-img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.tarjeta-nombre {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #708090;
+}
+
+.tarjeta-descripcion {
+  font-size: 14px;
+  color: #614f4f;
+  text-align: justify;
+}

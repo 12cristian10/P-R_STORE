@@ -4,109 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Barrio</title>
-
-    <style>
-        h1{
-            text-align: center;
-            font-style: normal;
-            font-family: Roboto, Oxygen, Ubuntu, Cantarell, sans-serif, Arial, sans-serif;
-            font-size: 80px;
-            color:#FBFCFC;
-        }
-
-        ul{
-            font-family: Roboto, Oxygen, Ubuntu, Cantarell, sans-serif, Arial, sans-serif;
-        }
-        body{
-            background-color: #A9CCE3;
-            margin: 0%;
-            padding: 0%;
-        }
-
-        .nav-bar-img{
-            width: 80px;
-            height: 80px;
-        }
-
-        .box {
-            width: 100px;
-            height: 200px;
-            display: inline-block;
-            margin: 0%;
-            padding: 0%;
-          }
-
-          .contenedor {
-            display: flex;
-            justify-content: center;
-        }
-    
-          .box:nth-child(even) {
-            background-color: #FBFCFC;
-          }
-    
-          .box:nth-child(odd) {
-            background-color: #922B21;
-          }
-
-          .contenedor-principal{
-            display: flex;
-            justify-content: center;
-            background-color: #154360;
-          }
-          nav {
-            background-color: #566573;
-            height: 120px;
-          }
-          
-          ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-          }
-          
-          li {
-            margin: 0 120px;
-          }
-          
-          a {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-transform: uppercase;
-            transition: all 0.2s ease-in-out;
-          }
-          
-          a:hover {
-            color: red;
-          }
-
-          span{
-            font-size: 20px;
-            font-weight: bold;
-            color:white;
-            text-align: center;
-          }
-
-          footer{
-            background-color: #154360;
-          }
-   
-    </style>
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <title>P & R STORE</title>
 </head>
 <body>
-    <div class="contenedor-principal">
-        <h1>Tienda Mi Barrio</h1>
-    </div>
-    
-    <div class="contenedor">
-    
+    <header>
+      <div class="contenedor">
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
@@ -126,24 +30,91 @@
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
-    </div>
-    
-
-    <nav>
+        <div class="box"></div>
+      </div>
+      <div class="contenedor-principal">
+        <h1>P & R STORE</h1>
+      </div>
+      <nav>
         <ul>
-            <li><a href="products.html"><img src="images/products.jpeg" class="nav-bar-img"></a><span>Productos</span></li>
-            <li><a href="aboutUs.html"><img src="images/about us.jpeg" class="nav-bar-img"></a><span>¿Quienes somos?</span></li>
-            <li><a href="contactUs.html"><img src="images/contact us.jpeg" class="nav-bar-img"></a><span>Contactanos</span></li>
-            <li><a href="https://www.unicartagena.edu.co/"><img src="images/udec.jpg" class="nav-bar-img"></a><span>UDeC</span></li>
+          <li><a href="index.html"><img src="images/home.jpeg" class="nav-bar-img active"></a><span>Inicio</span></li>
+          <li><a href="products.html"><img src="images/products.jpeg" class="nav-bar-img active"></a><span class="activate">Productos</span></li>
+          <li><a href="aboutUs.html"><img src="images/about us.jpeg" class="nav-bar-img active"></a><span>¿Quiénes somos?</span></li>
+          <li><a href="contactUs.html"><img src="images/contact us.jpeg" class="nav-bar-img active"></a><span>Contáctanos</span></li>
+          <li><a href="https://www.unicartagena.edu.co/"><img src="images/udec.jpg" class="nav-bar-img active"></a><span>UDeC</span></li>
         </ul>
-    </nav>
-
-    <div>
-        
-    </div>
-
+      </nav>
+    </header>
+    <main>
+      <section class="descuentos-section">
+        <h2>Descuentos disponibles</h2>
+        <p>Aprovecha nuestras promociones y descuentos especiales en una amplia selección de productos.</p>
+        <div class="descuentos-container">
+            <div class="descuento">
+                <img src="images/papa.png" class="descuento-img" alt="Descuento 1">
+                <h3 class="descuento-titulo">Papa X Kg</h3>
+                <p class="descuento-descripcion">Deliciosa papa con un 20% de descuento. Aprovecha esta oferta y disfruta de su sabor y versatilidad en tus comidas.</p>
+            </div>
+            <div class="descuento">
+                <img src="images/harina.jpeg" class="descuento-img" alt="Descuento 2">
+                <h3 class="descuento-titulo">Harina de trigo Haz de oro</h3>
+                <p class="descuento-descripcion">Obtén un 15% de descuento en nuestra harina de trigo Haz de Oro de 50 kg. Ideal para la preparación de panes y repostería de calidad.</p>
+            </div>
+            <div class="descuento">
+                <img src="images/sal.jpeg" class="descuento-img" alt="Descuento 3">
+                <h3 class="descuento-titulo">Sal Refisal</h3>
+                <p class="descuento-descripcion">Disfruta de un 30% de descuento en nuestra sal Refisal de 500 g. Añade sabor y sazón a tus comidas con este condimento esencial en la cocina.</p>
+            </div>
+        </div>
+    </section>
+      
+      <section class="productos-section">
+        <h2>Productos destacados</h2>
+        <div class="tarjetas-container">
+          <div class="tarjeta">
+            <img src="images/arroz.jpg" class="tarjeta-img" alt="Producto 1">
+            <h3 class="tarjeta-nombre">Arroz Diana</h3>
+            <p class="tarjeta-descripcion">Bolsa de 500 g de arroz blanco de grano largo con una alta fuente de carbohidratos, fibra y nutrientes esenciales como vitaminas y minerales.</p>
+          </div>
+          <div class="tarjeta">
+            <img src="images/pan.jpg" class="tarjeta-img" alt="Producto 2">
+            <h3 class="tarjeta-nombre">Pan Bimbo</h3>
+            <p class="tarjeta-descripcion">Pan suave y esponjoso ideal para preparar deliciosos sándwiches y acompañar tus comidas. Elaborado con ingredientes de alta calidad.</p>
+          </div>
+          <div class="tarjeta">
+            <img src="images/leche.jpeg" class="tarjeta-img" alt="Producto 3">
+            <h3 class="tarjeta-nombre">Leche Colanta</h3>
+            <p class="tarjeta-descripcion">Leche fresca y nutritiva, perfecta para disfrutar en tus desayunos y preparar deliciosas recetas. Rica en calcio y proteínas esenciales para una dieta equilibrada.</p>
+          </div>
+          <div class="tarjeta">
+            <img src="images/platano.jpg" class="tarjeta-img" alt="Producto 4">
+            <h3 class="tarjeta-nombre">Plátano</h3>
+            <p class="tarjeta-descripcion">Fruta tropical de sabor dulce y textura suave. El plátano es rico en potasio, vitaminas y fibra, ideal para aportar energía y disfrutar como snack o en diversas preparaciones.</p>
+          </div>
+          <div class="tarjeta">
+            <img src="images/aceite.jpg" class="tarjeta-img" alt="Producto 5">
+            <h3 class="tarjeta-nombre">Aceite Riquísimo</h3>
+            <p class="tarjeta-descripcion">Aceite de cocina de alta calidad, perfecto para freír, cocinar y aliñar tus platillos. Elaborado con ingredientes naturales y prensado en frío para conservar su sabor y propiedades.</p>
+          </div>
+          <div class="tarjeta">
+            <img src="images/azucar.jpg" class="tarjeta-img" alt="Producto 6">
+            <h3 class="tarjeta-nombre">Azúcar Manuelita</h3>
+            <p class="tarjeta-descripcion">Azúcar refinada de excelente calidad, ideal para endulzar tus bebidas, postres y preparaciones. Se disuelve fácilmente y brinda un dulzor delicioso a tus comidas favoritas.</p>
+          </div>
+        </div>
+      </section>
+      
+    </main>
     <footer>
-        <p>Derechos reservados </p>
-    </footer>
+      <div class="footer-text">© 2023 P & R STORE. Todos los derechos reservados.</div>
+      <div class="footer-icons">
+        <a href="#"><img src="Images/face.png" alt="Facebook"></a>
+        <a href="#"><img src="Images/twit.png" alt="Twitter"></a>
+        <a href="#"><img src="Images/inst.png" alt="Instagram"></a>
+      </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/Scripts/header.js"></script>
+  <script src="Scripts/index.js"></script>
 </body>
 </html>

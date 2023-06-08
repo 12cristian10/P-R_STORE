@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #A9CCE3;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, sans-serif, Arial, sans-serif;
+  color: #FBFCFC;
+}
+
+.contenedor-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #154360;
+  height: 200px;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+nav {
+  background-color: #566573;
+  height: 120px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+nav.scrolled {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.nav-bar-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.box {
+  width: 100px;
+  height: 80px;
+  display: inline-block;
+  margin: 0%;
+  padding: 0%;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+.box:nth-child(even) {
+  background-color: #FBFCFC;
+}
+
+.box:nth-child(odd) {
+  background-color: #922B21;
+}
+
+span {
+  font-size: 18px;
+  color: white;
+  margin: 10px;
+}
+
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 0 30px;
+}
+
+a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  color: #FBFCFC;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+.contenedor-secundario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 100px;
+  background-color: #601515;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+  color: black;
+}
+
+footer {
+  background-color: #566573;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FBFCFC;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-text {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.footer-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+.active {
+  background-color: white;
+}

@@ -1,0 +1,48 @@
+.tabla-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+#tabla-productos {
+  margin: 50px;
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#tabla-productos thead {
+  background-color: #555555;
+  color: #ffffff;
+}
+
+#tabla-productos th,
+#tabla-productos td {
+  padding: 10px;
+  text-align: center;
+}
+
+#tabla-productos tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#tabla-productos tbody tr:hover {
+  background-color: #dddddd;
+}
+
+#tabla-productos img {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+table tbody tr:nth-child(even) #product_data {
+  color: #ffffff;
+  background-color: #c05555;
+}
+
+table tbody tr:nth-child(odd) #product_data {
+  color: #ffffff;
+  background-color: #6f7891;
+}
