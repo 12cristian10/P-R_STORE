@@ -205,6 +205,7 @@ const productos = [
   
   productos.forEach((producto) => {
     const row = document.createElement("tr");
+    row.setAttribute('id',producto.id);
     row.innerHTML = `
       <td id="product_data">${producto.id}</td>
       <td id="product_data"><img src="${producto.imagen}" alt="Imagen"></td>

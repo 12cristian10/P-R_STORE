@@ -84,7 +84,6 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-transform: uppercase;
   transition: all 0.2s ease-in-out;
   color: #FBFCFC;
   text-decoration: none;
